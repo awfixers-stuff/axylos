@@ -14,7 +14,9 @@ with import ../lib;
   configuration ? { },
 }:
 
-with import ../pkgs/top-level/release-lib.nix { inherit supportedSystems; };
+with import (builtins.fetchTarball {
+  url = "https://github.com/nixos/nixpkgs/archive/refs/heads/main.tar.gz";
+} + "/pkgs/top-level/release-lib.nix") { inherit supportedSystems; };
 
 let
 
