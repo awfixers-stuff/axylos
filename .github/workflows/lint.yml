@@ -29,7 +29,7 @@ jobs:
           mergedSha: ${{ inputs.mergedSha }}
           merged-as-untrusted: true
 
-      - uses: cachix/install-nix-action@f0fe604f8a612776892427721526b4c7cfb23aba # v31
+      - uses: cachix/install-nix-action@c134e4c9e34bac6cab09cf239815f9339aaaf84e # v31
         with:
           extra_nix_config: sandbox = true
 
@@ -61,7 +61,7 @@ jobs:
           mergedSha: ${{ inputs.mergedSha }}
           merged-as-untrusted: true
 
-      - uses: cachix/install-nix-action@f0fe604f8a612776892427721526b4c7cfb23aba # v31
+      - uses: cachix/install-nix-action@c134e4c9e34bac6cab09cf239815f9339aaaf84e # v31
         with:
           extra_nix_config: sandbox = true
 
@@ -86,7 +86,7 @@ jobs:
           targetSha: ${{ inputs.targetSha }}
           target-as-trusted: true
 
-      - uses: cachix/install-nix-action@f0fe604f8a612776892427721526b4c7cfb23aba # v31
+      - uses: cachix/install-nix-action@c134e4c9e34bac6cab09cf239815f9339aaaf84e # v31
         with:
           extra_nix_config: sandbox = true
 
